@@ -1,0 +1,485 @@
+/*All*/
+body {
+  font-family: alegreya sans;
+  font-size: 16px;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+/*Text and backgrounds*/
+.center {
+  text-align: center;
+}
+
+.gray {
+  background: #e8e8e8;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.big {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.small {
+  font-size: .8rem;
+  color: #888888;
+}
+
+.boldtext {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.blue {
+  color: blue;
+  padding-top: 8px;
+}
+
+/*Padding*/
+.rightpad16 {
+  padding-right: 16px;
+}
+
+.rightpad24 {
+  padding-right: 24px;
+}
+
+.toppad24 {
+  padding-top: 24px;
+}
+
+.toppad8 {
+  padding-top: 8px;
+}
+
+.bottompad {
+  padding-bottom: 24px;
+}
+
+.toppad16 {
+  padding-top: 16px;
+}
+
+.bottompad32 {
+  padding-bottom: 32px;
+}
+
+.marginleft32 {
+  margin-left: 32px;
+}
+
+.toppad32 {
+  padding-top: 32px;
+}
+
+.leftpad24 {
+  padding-left: 24px;
+}
+
+.leftpad32 {
+  padding-left: 32px;
+}
+
+.bottompad8 {
+  padding-bottom: 8px;
+}
+
+/*Nav*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.navbarmobile {
+  display: none;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  padding-left: 24px;
+}
+
+.navbar {
+  display: flex;
+}
+
+/*1st section*/
+.firstbox {
+  display: flex;
+  align-items: center;
+}
+
+.firstbox img {
+  box-sizing: border-box;
+  width: 60%;
+  padding: 32px 24px;
+}
+
+/*Start button in first section*/
+.button {
+  background: #686868;
+  text-align: center;
+  padding: 8px 0;
+  color: white;
+  width: 80%;
+}
+
+/*2nd section*/
+.secondbox {
+  display: flex;
+}
+
+.row1, .row2 {
+  padding: 0 72px;
+}
+
+/*2nd section left side*/
+.leftside {
+  width: 60%;
+  line-height: 1rem;
+  padding-bottom: 32px;
+}
+
+.leftside img {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 32px 24px;
+}
+
+.texttitle {
+  padding: 0 0 24px 24px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.name {
+  padding: 32px 0 32px 24px;
+}
+
+/*2nd section right side*/
+.rightside {
+  width: 40%;
+  border-left: 2px solid lightgray;
+  padding: 32px 0;
+}
+
+.imgmobile {
+  display: none;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid lightgray;
+}
+
+.img {
+  width: 35%;
+  padding: 0 16px 16px 16px;
+}
+
+.toppad16 {
+  padding-top: 16px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 8px;
+}
+
+/*3rd section*/
+
+.thirdboxmobile {
+  display: none;
+}
+
+.boxtitle {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.box {
+  background: white;
+}
+
+.box p, h1 {
+  padding-left: 16px;
+}
+
+.box p {
+  color: #888888;
+}
+
+.top {
+  padding: 16px 0 8px 16px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.courses {
+  padding-bottom: 8px;
+}
+
+/*1st row of 3 boxes*/
+.row1 {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.box img {
+  width: 100%;
+}
+
+/*2nd row of 3 boxes*/
+.row2 {
+  display: flex;
+  padding-bottom: 32px;
+}
+
+/*4th section*/
+
+.video {
+  width: 60%;
+}
+
+.video video {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 24px;
+}
+
+.spacetop {
+  padding: 24px 0 8px 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex2 {
+  display: flex;
+  align-items: center;
+}
+
+.fourthboxright {
+  width: 40%;
+}
+
+.fourthboxright img {
+  width: 35%;
+  padding: 16px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0 32px 24px;
+  border-top: 2px solid lightgray;
+}
+
+footer ul li {
+  display: inline;
+  padding-left: 8px;
+}
+
+@media only screen and (max-width: 700px) {
+  /*Navigation */
+  .title, .navbar {
+    display: none;
+  }
+
+  .navbarmobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 32px;
+  }
+
+  /*First section*/
+  .firstbox {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .firstbox img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .firstboxtext {
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .button {
+    box-sizing: border-box;
+    margin: 24px 0;
+    width: 100%;
+  }
+
+  /*Second section, display right side only for mobile*/
+  .leftside {
+    display: none;
+  }
+
+  .rightside {
+    width: 100%;
+  }
+
+  .imgmobile {
+    display: block;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .blue {
+    padding-bottom: 32px;
+  }
+
+  .right {
+    background: white;
+    border-bottom: white;
+    line-height: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rightsideflex {
+    padding-left: 32px;
+  }
+
+  .smallmobile {
+    font-size: 1rem;
+  }
+
+  .imgmobile {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 16px 16px 16px;
+  }
+
+  /*Third section*/
+  /*Images and text not displayed in mobile version*/
+  .box img {
+    display: none;
+  }
+
+  .box p {
+    display: none;
+  }
+
+  .flex p {
+    display: none;
+  }
+
+  .row1, .row2 {
+    display: none;
+  }
+
+  .boxtitle {
+    border-top: 2px solid lightgray;
+    background: white;
+  }
+
+  .thirdboxmobile {
+    display: block;
+    margin: 0px 16px;
+  }
+
+  .thirdboxmobile p {
+    padding: 16px 0 24px 16px;
+    margin-top: 8px;
+  }
+
+  .thirdbox h1 {
+    width: 100%;
+  }
+
+  .topline {
+    border-top: 2px solid lightgray;
+    padding: 32px 0;
+  }
+
+  .topline {
+    border-top: 0;
+  }
+
+  /*fourth section*/
+  .fourthboxright {
+    display: none;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  /*Footer*/
+  footer ul {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+  /*First box center align text*/
+  .centermobile {
+    text-align: center;
+  }
+
+  /*Second box center pictures*/
+  .right {
+    width: 80%;
+    margin: 0 auto;
+    border: 0;
+  }
+
+  /*Center third section*/
+  .thirdboxmobile {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .topline {
+    border-top: 0;
+  }
+
+  .button {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .big {
+    font-size: 3.2rem;
+  }
+
+  .texttitle {
+    font-size: 2.5rem;
+  }
+
+  .small {
+    font-size: 1rem;
+  }
+}
